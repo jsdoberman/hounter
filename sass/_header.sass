@@ -1,0 +1,95 @@
+/* ======================================header */
+.header
+    position: absolute
+    top: 40px
+    left: 50%
+    z-index: 99
+    width: 100%
+    transform: translateX(-50%)
+
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 65px
+        position: relative
+    &__logo
+
+        img
+
+    &__menu
+        flex: 1 1 100%
+        display: flex
+        justify-content: flex-end
+
+    &__btn
+        width: 107px
+        background: #D1FAE5
+        border-radius: 32px
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 22px
+        color: #047857
+        white-space: nowrap
+        padding: 12px 24px
+        transition: all 0.5s
+        &:hover
+            transition: all 0.5s
+            background: #fff
+            color: #D1FAE5
+
+.menu
+    display: flex
+    gap: 24px
+    flex-wrap: wrap
+
+    &__item
+        position: relative
+
+        &:hover .menu__sub-menu
+            opacity: 1
+            visibility: visible
+            transform: translateY(0)
+            transition: all 0.5s
+
+    &__link
+        background: rgba(255, 255, 255, 0.1)
+        border: 1px solid rgba(255, 255, 255, 1)
+        border-radius: 32px
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 18px
+        text-transform: capitalize
+        color: #fff
+        padding: 8px 16px
+        white-space: nowrap
+        transition: all 0.5s
+        display: flex
+        gap: 10px
+        align-items: center
+        &:hover
+            transition: all 0.5s
+            background: #D1FAE5
+
+    &__sub-menu
+        background: #10B981
+        padding: 30px
+        border-radius: 32px
+        position: absolute
+        top: 36px
+        left: -30px
+        opacity: 0
+        visibility: hidden
+        transform: translateY(100px)
+        transition: all 0.5s
+
+        li
+            margin-bottom: 15px
+            &:last-child
+                margin-bottom: 0
+
+            a
+                width: 100%
+                display: block

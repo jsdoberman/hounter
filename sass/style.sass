@@ -1,0 +1,257 @@
+@import "fonts"
+@import "null"
+@import "bem-block"
+@import "select-style"
+@import "header"
+@import "footer"
+
+.main-section
+    min-height: 720px
+    position: relative
+    display: flex
+    height: 100%
+
+    @media (max-width: 1078.98px)
+        flex-direction: column
+    &::before
+        z-index: -2
+        content: ''
+        display: block
+        position: absolute
+        background: url('../img/decor/01.svg') center center
+        width: 813px
+        height: 615px
+        top: -30%
+        left: -60px
+
+    &__left
+        padding-left: calc( (100vw - 1230px) / 2 )
+        width: 50%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-top: 100px
+        padding-right: 100px
+        @media (max-width: 1078.98px)
+            width: 100%
+            padding-left: 15px
+
+    &__title
+        font-style: normal
+        font-weight: 600
+        font-size: 40px
+        line-height: 50px
+        text-transform: capitalize
+        color: #1B1C57
+        border: 1px solid transparent
+        margin-bottom: 24px
+        span
+            -webkit-text-fill-color: transparent
+            -webkit-text-stroke: 1px #1B1C57
+
+    &__text
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 28px
+        color: #626687
+        opacity: 0.75
+        margin-bottom: 32px
+
+    &__search
+
+    &__partner-title
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 32px
+        color: #888B97
+        margin-bottom: 9px
+
+    &__partnet-block
+        display: flex
+        gap: 32px
+
+    &__partner-img
+        width: 89px
+        height: 68px
+        transition: all 0.7s
+        padding: 4px
+        border: 2px solid transparent
+        &:hover
+            transform: rotate(9deg)
+            transition: all 0.3s
+            border: 1px solid #E0E3EB
+            border-radius: 8px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+.search-block
+    padding: 4px 4px 4px 64px
+    width: 100%
+    height: 56px
+    background: #FFFFFF
+    border: 1px solid #E0E3EB
+    border-radius: 32px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+    gap: 20px
+    margin-bottom: 36px
+
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        top: 50%
+        left: 27px
+        transform: translateY(-50%)
+        width: 18px
+        height: 22px
+        background: url('../img/icons/01.svg') center center / contain no-repeat
+        transition: all 0.5s
+    input
+        max-width: 500px
+        width: 100%
+        height: 100%
+        border: none
+        font-family: 'Lexend'
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        color: #3e3f44
+        &::placeholder
+            font-family: 'Lexend'
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            color: #888B97
+            max-width: 500px
+            width: 100%
+            border: none
+
+    &__btn
+        padding: 12px 44px 12px 16px
+        background: #10B981
+        border-radius: 32px
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 22px
+        color: #FFFFFF
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 20px
+            width: 7px
+            height: 14px
+            display: block
+            background: url('../img/icons/s01.svg') center center no-repeat
+            transition: all 0.5s
+
+        &:hover::before
+            transition: all 0.5s
+            right: 15px
+
+    &:hover::before
+        transform: scale(1.2) translateY(-50%)
+        transition: all 0.5s
+
+.main-section__partner-title
+
+.main-section__partnet-block
+
+.main-section____partner-img
+
+.main-section__right
+    width: 50%
+    background: linear-gradient(16.74deg, #0C1537 -6.09%, rgba(12, 21, 55, 0) 32.63%), url(../img/bg/01.jpg) center center / cover no-repeat
+    border-radius: 0px 0px 0px 80px
+    position: relative
+    @media (max-width: 1078.98px)
+        width: 100%
+
+.main-slider
+    position: absolute
+    bottom: 50px
+    left: 50px
+    width: 100%
+
+    .slick-arrow
+        font-size: 0
+        background: transparent
+        border: none
+
+    .slick-dots
+        display: flex !important
+        gap: 12px
+        margin-left: 50px
+
+        li
+            button
+                font-size: 0
+                width: 12px
+                height: 12px
+                border-radius: 100%
+                background: #FFFFFF
+                opacity: 0.4
+
+        .slick-active
+            button
+                background: #FFFFFF
+                opacity: 1
+
+.sl-item
+    width: 420px
+    height: 160px
+    display: flex
+    gap: 24px
+    background: #FFFFFF
+    box-shadow: 0px 10px 8px rgba(72, 72, 72, 0.2)
+    border-radius: 32px
+    padding: 12px 32px 12px 12px
+    margin: 0 12px
+    &__img
+        width: 136px
+        height: 136px
+        img
+            border-radius: 24px
+
+    &__text-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+    &__title
+        font-style: normal
+        font-weight: 500
+        font-size: 18px
+        line-height: 26px
+        color: #1B1C57
+        margin-bottom: 8px
+
+    &__descr
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 20px
+        color: #68799F
+        margin-bottom: 8px
+
+    &__rait
+        display: flex
+        gap: 8px
+        align-items: center
+
+    &__info
+        font-style: normal
+        font-weight: 500
+        font-size: 12px
+        line-height: 20px
+        color: #1B1C57
