@@ -34,7 +34,17 @@
         padding-right: 100px
         @media (max-width: 1078.98px)
             width: 100%
-            padding-left: 15px
+            padding-right: 15px
+
+    &__left-wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        padding-top: 100px
+        padding-left: 15px
+        padding-bottom: 15px
+        @media (max-width: 1078.98px)
+            padding-top: 40px
 
     &__title
         font-style: normal
@@ -71,6 +81,10 @@
     &__partnet-block
         display: flex
         gap: 32px
+        @media (max-width: 1078.98px)
+            justify-content: space-around
+            @media (max-width: 539.98px)
+                flex-wrap: wrap
 
     &__partner-img
         width: 89px
@@ -163,12 +177,6 @@
         transform: scale(1.2) translateY(-50%)
         transition: all 0.5s
 
-.main-section__partner-title
-
-.main-section__partnet-block
-
-.main-section____partner-img
-
 .main-section__right
     width: 50%
     background: linear-gradient(16.74deg, #0C1537 -6.09%, rgba(12, 21, 55, 0) 32.63%), url(../img/bg/01.jpg) center center / cover no-repeat
@@ -176,12 +184,15 @@
     position: relative
     @media (max-width: 1078.98px)
         width: 100%
+        min-height: 450px
 
 .main-slider
     position: absolute
     bottom: 50px
     left: 50px
     width: 100%
+    @media (max-width: 662.98px)
+        left: 0
 
     .slick-arrow
         font-size: 0
@@ -209,7 +220,7 @@
 
 .sl-item
     width: 420px
-    height: 160px
+    min-height: 160px
     display: flex
     gap: 24px
     background: #FFFFFF
@@ -217,9 +228,16 @@
     border-radius: 32px
     padding: 12px 32px 12px 12px
     margin: 0 12px
+    @media (max-width: 442.98px)
+        padding: 12px 18px
+        flex-direction: column
+        align-items: center
+        width: 90vw
+
     &__img
         width: 136px
         height: 136px
+
         img
             border-radius: 24px
 
