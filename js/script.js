@@ -11,68 +11,67 @@
 		});
 	});
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* =========================================================== Вибір діапазона */
-/* Вибір діапазона (input type='range')  https://refreshless.com/nouislider/ */
-/* const rangeSlider = document.getElementById('range-slider');
-
-if (rangeSlider) {
-	noUiSlider.create(rangeSlider, {
-    start: [500, 999999],
-		connect: true,
-		step: 1,
-    range: {
-			'min': [500],
-			'max': [999999]
-    }
-	});
-
-	const input0 = document.getElementById('input-0');
-	const input1 = document.getElementById('input-1');
-	const inputs = [input0, input1];
-
-	rangeSlider.noUiSlider.on('update', function(values, handle){
-		inputs[handle].value = Math.round(values[handle]);
-	});
-
-	const setRangeSlider = (i, value) => {
-		let arr = [null, null];
-		arr[i] = value;
-
-		console.log(arr);
-
-		rangeSlider.noUiSlider.set(arr);
-	};
-
-	inputs.forEach((el, index) => {
-		el.addEventListener('change', (e) => {
-			console.log(index);
-			setRangeSlider(index, e.currentTarget.value);
-		});
-	});
-} 
-*/
-
-
-
-/* =========================================================== слайдер*/
-/* $(document).ready(function(){
-		$('.your-class').slick({
+ $(document).ready(function(){
+		$('.houses-slider').slick({
+			infinite: true,
+  			slidesToShow: 3,
+			nextArrow: '<button type="button" class="slick-next"><img src="img/icons/right.svg" alt=""></button>',
+			prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/left.svg" alt=""></button>',
+			
+  			variableWidth: true
 			
 		});
 	});
- */
+
+
+const tabTitle = document.querySelectorAll('.tabs-title'),
+	tabSection = document.querySelectorAll('.houses-slider'),
+	tabParent = document.querySelector('.recommend__container');
+
+function hideActive() {
+	tabTitle.forEach(function(item) {
+		item.classList.remove('tabs-title_active');
+	})
+
+	tabSection.forEach(function(item) {
+		item.style.display = 'none'
+	})
+}
+
+hideActive()
+
+function showeActive(i = 0) {
+	tabTitle[i].classList.add('tabs-title_active');
+	tabSection[i].style.display = 'block'
+}
+showeActive()
+
+
+tabParent.addEventListener('click', function(event) {
+	if (event.target && event.target.classList.contains('tabs-title')) {
+		tabTitle.forEach(function(item, i) {
+			if (event.target == item) {
+				hideActive();
+				showeActive(i)
+			}
+		})
+	}
+})
+
+
+
+
+	/* tabTitle.forEach(function(item, i) {
+		if (event.target === event.target.classList.contains('tabs-title')) {
+			hideActive()
+			showeActive(i)
+		}
+	}) */
+
+
+
+
+
 
 
 /* =========================================================== БУРГЕР МЕНЮ */
@@ -99,88 +98,6 @@ const burger = document.querySelector('.hamburger'),
 			});
 		});
 
-
-/* =========================================================== Движение элементов по прокрутке страницы */
-
-/* -------------------------------------------Движение ввурх */
-/* function onEntryToTop(entry) {
-	entry.forEach(change => {
-		if (change.isIntersecting) {
-		 change.target.classList.add('to-top'); //Добавляем класс активности
-		} else change.target.classList.remove('to-top'); // Оставляем - будет срабатывать каждый раз
-	});
-}
-
-let optionsToTop = {
-		threshold: [0.5] 
-};
-
-let observerToTop = new IntersectionObserver(onEntryToTop, optionsToTop); 
-let elementsToTop = document.querySelectorAll('.to-top_dote'); // Класс- метка. или любой класс к которому хотим подвязать
-
-for (let elm of elementsToTop) { 
-	observerToTop.observe(elm); 
-} */
-
-/* ---------------------------------------Движение слева на право */
-/* function onEntryLeftToRight(entry) {
-	entry.forEach(change => {
-		if (change.isIntersecting) {
-		 change.target.classList.add('left-to-right'); //Добавляем класс активности
-		} else change.target.classList.remove('left-to-right'); // Оставляем - будет срабатывать каждый раз
-	});
-}
-
-let optionsLeftToRight = {
-		threshold: [0.5] 
-};
-
-let observerLeftToRight = new IntersectionObserver(onEntryLeftToRight, optionsLeftToRight); 
-let elementsLeftToRight = document.querySelectorAll('.left-to-right_dote'); // Класс- метка. или любой класс к которому хотим подвязать
-
-for (let elm of elementsLeftToRight) { 
-	observerLeftToRight.observe(elm); 
-} */
-
-/* ---------------------------------------Движение справа на лево */
-/* function onEntryRightToLeft(entry) {
-	entry.forEach(change => {
-		if (change.isIntersecting) {
-		 change.target.classList.add('right-to-left'); //Добавляем класс активности
-		} else change.target.classList.remove('right-to-left'); // Оставляем - будет срабатывать каждый раз
-	});
-}
-
-let optionsRightToLeft = {
-		threshold: [0.5] 
-};
-
-let observerRightToLeft = new IntersectionObserver(onEntryRightToLeft, optionsRightToLeft); 
-let elementsRightToLeft = document.querySelectorAll('.right-to-left_dote'); // Класс- метка. или любой класс к которому хотим подвязать
-
-for (let elm of elementsRightToLeft) { 
-	observerRightToLeft.observe(elm); 
-} */
-
-/* ---------------------------------------Движение поворот */
-/* function onEntryRotate(entry) {
-	entry.forEach(change => {
-		if (change.isIntersecting) {
-		 change.target.classList.add('rotate'); //Добавляем класс активности
-		} else change.target.classList.remove('rotate'); // Оставляем - будет срабатывать каждый раз
-	});
-}
-
-let optionsRotate = {
-		threshold: [0.5] 
-};
-
-let observerRotate = new IntersectionObserver(onEntryRotate, optionsRotate); 
-let elementsRotate = document.querySelectorAll('.rotate_dote'); // Класс- метка. или любой класс к которому хотим подвязать
-
-for (let elm of elementsRotate) { 
-	observerRotate.observe(elm); 
-} */
 
 
 
