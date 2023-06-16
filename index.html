@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Hounter</title>
 </head>
@@ -41,10 +42,10 @@
             <section class="main-section">
                 <div class="main-section__left">
                     <div class="main-section__left-wrapper">
-                        <h1 class="main-section__title">find the place to live <span>your dreams</span> easily here</h1>
+                        <h1 class="main-section__title wow bounceInLeft" data-wow-duration="1s">find the place to live <span>your dreams</span> easily here</h1>
                         <div class="main-section__text">Everything you need about finding your place to live will be
                             here, where it will be easier for you</div>
-                        <form action="#" class="main-section__search search-block">
+                        <form action="#" class="main-section__search search-block wow bounceInUp" data-wow-duration="3s">
                             <input type="text" placeholder="Search for the location you want!">
                             <button class="search-block__btn">Search</button>
 
@@ -60,7 +61,7 @@
                 </div>
                 <div class="main-section__right">
 
-                    <div class="main-slider">
+                    <div class="main-slider wow bounceInRight" data-wow-duration="2s">
                         <div>
                             <div class="sl-item">
                                 <a href="#" class="sl-item__img"><img src="img/sl/01.jpg" alt="01"></a>
@@ -113,8 +114,8 @@
 
                 <div class="recommend__container">
                     <div class="recommend__block">
-                        <div class="sub-title-block">Our Recommendation</div>
-                        <h2 class="title-block">Featured House</h2>
+                        <div class="sub-title-block wow fadeInLeftBig" data-wow-duration="2s">Our Recommendation</div>
+                        <h2 class="title-block wow fadeInLeftBig" data-wow-duration="1s" >Featured House</h2>
                     </div>
                     <div class="recommend__block">
                         <div class="tabs-title"><svg width="24" height="24" viewBox="0 0 24 24"
@@ -142,7 +143,7 @@
                 </div>
 
 
-                <div class="houses-slider">
+                <div class="houses-slider wow fadeInRight" data-wow-duration="2s">
                     <div>
                         <div class="house-item">
                             <div class="house-item__img">
@@ -230,7 +231,7 @@
                     </div>
 
                 </div>
-                <div class="houses-slider">
+                <div class="houses-slider " >
                     <div>
                         <div class="house-item">
                             <div class="house-item__img">
@@ -318,7 +319,7 @@
                     </div>
 
                 </div>
-                <div class="houses-slider">
+                <div class="houses-slider ">
                     <div>
                         <div class="house-item">
                             <div class="house-item__img">
@@ -412,8 +413,8 @@
             <section class="sell">
                 <div class="sell__container">
                     <div class="sell__block">
-                        <div class="sub-title-block">Ready to Sell!</div>
-                        <h2 class="sell__wrap title-block">Let’s tour and see our house!</h2>
+                        <div class="sub-title-block wow fadeInLeftBig" data-wow-duration="2s">Ready to Sell!</div>
+                        <h2 class="sell__wrap title-block wow fadeInLeftBig" data-wow-duration="1s">Let’s tour and see our house!</h2>
                         <div class="sell__descr">Houses recommended by our partners that have been curated to become the home of your dreams!</div>
                         <div class="sell__detail-title">House Detail</div>
                         <div class="sell__detail-block block-detail">
@@ -493,9 +494,9 @@
                     </div>
                     <div class="sell__block sell__block-right">
                         <img src="img/sell/01.jpg" alt="">
-                        <img src="img/sell/02.jpg" alt="">
-                        <img src="img/sell/03.jpg" alt="">
-                        <img src="img/sell/04.jpg" alt="">
+                        <img src="img/sell/02.jpg" alt="" class="wow fadeInRightBig" data-wow-duration="1s">
+                        <img src="img/sell/03.jpg" alt="" class="wow fadeInRightBig" data-wow-duration="1.5s">
+                        <img src="img/sell/04.jpg" alt="" class="wow fadeInRightBig" data-wow-duration="2s">
                     </div>
 
                 </div>
@@ -503,35 +504,270 @@
 
             <section class="review">
                 <div class="review__container">
-                    <div class="sub-title-block">See Our Review</div>
-                    <h2 class="sell__wrap title-block">What Our User Say About Us</h2>
+                    <div class="sub-title-block wow fadeInLeftBig" data-wow-duration="2s">See Our Review</div>
+                    <h2 class="sell__wrap title-block wow fadeInLeftBig" data-wow-duration="1s">What Our User Say About Us</h2>
                 </div>
 
+                <div class="slider-review">
+                    <div>
+                        <div class="slider-review__item">
+                            <div class="slider-review__img"><img src="img/bg/r01.jpg" alt=""></div>
+                            <div class="slider-review__text-wrapper">
+                                <h3 class="slider-review__title">Through the Hounter, I can get a house for my self</h3>
+                                <p class="slider-review__text">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+                                
+                                <div class="slider-review__about">
+                                    <img class="slider-review__photo" src="img/icons/p1.png" alt="">
+                                    <div class="slider-review__wrap">
+                                        <div class="slider-review__name">Esther Howard</div>
+                                        <div class="slider-review__info">Head of Marketing</div>
+                                    </div>
+                                    <div class="slider-review__rait"><svg width="13" height="12" viewBox="0 0 13 12"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.6495 5.44248C12.7952 5.33746 12.9034 5.19094 12.9587 5.02348C13.014 4.85602 13.0138 4.67601 12.958 4.50869C12.9022 4.34138 12.7937 4.19514 12.6476 4.0905C12.5016 3.98585 12.3253 3.92804 12.1436 3.92517L8.61388 3.7962C8.59653 3.79504 8.57989 3.78905 8.56598 3.77895C8.55206 3.76886 8.54146 3.75509 8.53545 3.7393L7.31575 0.55293C7.25447 0.39082 7.14316 0.250839 6.9969 0.151939C6.85064 0.0530403 6.6765 0 6.49804 0C6.31958 0 6.14543 0.0530403 5.99918 0.151939C5.85292 0.250839 5.74161 0.39082 5.68033 0.55293L4.46455 3.75068C4.45854 3.76647 4.44794 3.78024 4.43402 3.79033C4.42011 3.80043 4.40347 3.80642 4.38611 3.80758L0.856436 3.93655C0.674699 3.93942 0.498448 3.99723 0.352396 4.10188C0.206343 4.20652 0.0978141 4.35276 0.0420256 4.52007C-0.013763 4.68739 -0.0140133 4.8674 0.0413097 5.03486C0.0966328 5.20232 0.204755 5.34884 0.350516 5.45386L3.11935 7.55914C3.13321 7.56969 3.14357 7.58393 3.14914 7.60011C3.15472 7.6163 3.15527 7.6337 3.15073 7.65018L2.19771 10.9162C2.14833 11.0825 2.15311 11.2595 2.21142 11.4231C2.26972 11.5867 2.37871 11.7289 2.52356 11.8305C2.66841 11.932 2.84209 11.988 3.02097 11.9907C3.19985 11.9934 3.37525 11.9427 3.5233 11.8456L6.44902 9.94892C6.46343 9.93929 6.48053 9.93414 6.49804 9.93414C6.51555 9.93414 6.53265 9.93929 6.54706 9.94892L9.47277 11.8456C9.61882 11.946 9.79359 12 9.97281 12C10.152 12 10.3268 11.946 10.4728 11.8456C10.6177 11.745 10.7268 11.6034 10.7851 11.4404C10.8434 11.2773 10.848 11.1009 10.7984 10.9352L9.83751 7.65777C9.83242 7.64131 9.8327 7.62374 9.83831 7.60745C9.84393 7.59116 9.8546 7.57694 9.86888 7.56673L12.6495 5.44248Z"
+                                                fill="#F59E0B" />
+                                        </svg>5.0</div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-review__item">
+                            <div class="slider-review__img"><img src="img/bg/r02.jpg" alt=""></div>
+                            <div class="slider-review__text-wrapper">
+                                <h3 class="slider-review__title">Best! I got the house I wanted through Hounter</h3>
+                                <p class="slider-review__text">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+                            
+                                <div class="slider-review__about">
+                                    <img class="slider-review__photo" src="img/icons/p2.png" alt="">
+                                    <div class="slider-review__wrap">
+                                        <div class="slider-review__name">Esther Howard</div>
+                                        <div class="slider-review__info">Head of Marketing</div>
+                                    </div>
+                                    <div class="slider-review__rait"><svg width="13" height="12" viewBox="0 0 13 12"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.6495 5.44248C12.7952 5.33746 12.9034 5.19094 12.9587 5.02348C13.014 4.85602 13.0138 4.67601 12.958 4.50869C12.9022 4.34138 12.7937 4.19514 12.6476 4.0905C12.5016 3.98585 12.3253 3.92804 12.1436 3.92517L8.61388 3.7962C8.59653 3.79504 8.57989 3.78905 8.56598 3.77895C8.55206 3.76886 8.54146 3.75509 8.53545 3.7393L7.31575 0.55293C7.25447 0.39082 7.14316 0.250839 6.9969 0.151939C6.85064 0.0530403 6.6765 0 6.49804 0C6.31958 0 6.14543 0.0530403 5.99918 0.151939C5.85292 0.250839 5.74161 0.39082 5.68033 0.55293L4.46455 3.75068C4.45854 3.76647 4.44794 3.78024 4.43402 3.79033C4.42011 3.80043 4.40347 3.80642 4.38611 3.80758L0.856436 3.93655C0.674699 3.93942 0.498448 3.99723 0.352396 4.10188C0.206343 4.20652 0.0978141 4.35276 0.0420256 4.52007C-0.013763 4.68739 -0.0140133 4.8674 0.0413097 5.03486C0.0966328 5.20232 0.204755 5.34884 0.350516 5.45386L3.11935 7.55914C3.13321 7.56969 3.14357 7.58393 3.14914 7.60011C3.15472 7.6163 3.15527 7.6337 3.15073 7.65018L2.19771 10.9162C2.14833 11.0825 2.15311 11.2595 2.21142 11.4231C2.26972 11.5867 2.37871 11.7289 2.52356 11.8305C2.66841 11.932 2.84209 11.988 3.02097 11.9907C3.19985 11.9934 3.37525 11.9427 3.5233 11.8456L6.44902 9.94892C6.46343 9.93929 6.48053 9.93414 6.49804 9.93414C6.51555 9.93414 6.53265 9.93929 6.54706 9.94892L9.47277 11.8456C9.61882 11.946 9.79359 12 9.97281 12C10.152 12 10.3268 11.946 10.4728 11.8456C10.6177 11.745 10.7268 11.6034 10.7851 11.4404C10.8434 11.2773 10.848 11.1009 10.7984 10.9352L9.83751 7.65777C9.83242 7.64131 9.8327 7.62374 9.83831 7.60745C9.84393 7.59116 9.8546 7.57694 9.86888 7.56673L12.6495 5.44248Z"
+                                                fill="#F59E0B" />
+                                        </svg>3.6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="slider-review__item">
+                            <div class="slider-review__img"><img src="img/bg/r01.jpg" alt=""></div>
+                            <div class="slider-review__text-wrapper">
+                                <h3 class="slider-review__title">My house sold out fast!</h3>
+                                <p class="slider-review__text">I was finally able to sell my house quickly through Hounter by immediately setting me up with people who wanted my house. I also do not get a discount from the sale of my house. Awesome!</p>
+                            
+                                <div class="slider-review__about">
+                                    <img class="slider-review__photo" src="img/icons/p3.png" alt="">
+                                    <div class="slider-review__wrap">
+                                        <div class="slider-review__name">Esther Howard</div>
+                                        <div class="slider-review__info">Head of Marketing</div>
+                                    </div>
+                                    <div class="slider-review__rait"><svg width="13" height="12" viewBox="0 0 13 12"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.6495 5.44248C12.7952 5.33746 12.9034 5.19094 12.9587 5.02348C13.014 4.85602 13.0138 4.67601 12.958 4.50869C12.9022 4.34138 12.7937 4.19514 12.6476 4.0905C12.5016 3.98585 12.3253 3.92804 12.1436 3.92517L8.61388 3.7962C8.59653 3.79504 8.57989 3.78905 8.56598 3.77895C8.55206 3.76886 8.54146 3.75509 8.53545 3.7393L7.31575 0.55293C7.25447 0.39082 7.14316 0.250839 6.9969 0.151939C6.85064 0.0530403 6.6765 0 6.49804 0C6.31958 0 6.14543 0.0530403 5.99918 0.151939C5.85292 0.250839 5.74161 0.39082 5.68033 0.55293L4.46455 3.75068C4.45854 3.76647 4.44794 3.78024 4.43402 3.79033C4.42011 3.80043 4.40347 3.80642 4.38611 3.80758L0.856436 3.93655C0.674699 3.93942 0.498448 3.99723 0.352396 4.10188C0.206343 4.20652 0.0978141 4.35276 0.0420256 4.52007C-0.013763 4.68739 -0.0140133 4.8674 0.0413097 5.03486C0.0966328 5.20232 0.204755 5.34884 0.350516 5.45386L3.11935 7.55914C3.13321 7.56969 3.14357 7.58393 3.14914 7.60011C3.15472 7.6163 3.15527 7.6337 3.15073 7.65018L2.19771 10.9162C2.14833 11.0825 2.15311 11.2595 2.21142 11.4231C2.26972 11.5867 2.37871 11.7289 2.52356 11.8305C2.66841 11.932 2.84209 11.988 3.02097 11.9907C3.19985 11.9934 3.37525 11.9427 3.5233 11.8456L6.44902 9.94892C6.46343 9.93929 6.48053 9.93414 6.49804 9.93414C6.51555 9.93414 6.53265 9.93929 6.54706 9.94892L9.47277 11.8456C9.61882 11.946 9.79359 12 9.97281 12C10.152 12 10.3268 11.946 10.4728 11.8456C10.6177 11.745 10.7268 11.6034 10.7851 11.4404C10.8434 11.2773 10.848 11.1009 10.7984 10.9352L9.83751 7.65777C9.83242 7.64131 9.8327 7.62374 9.83831 7.60745C9.84393 7.59116 9.8546 7.57694 9.86888 7.56673L12.6495 5.44248Z"
+                                                fill="#F59E0B" />
+                                        </svg>4.6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slider-review__item">
+                            <div class="slider-review__img"><img src="img/bg/r02.jpg" alt=""></div>
+                            <div class="slider-review__text-wrapper">
+                                <h3 class="slider-review__title">Best! I got the house I wanted through Hounter</h3>
+                                <p class="slider-review__text">Through this website I can get a house with the type and specifications I want very easily, without a complicated process to be able to find information on the house we want.</p>
+                            
+                                <div class="slider-review__about">
+                                    <img class="slider-review__photo" src="img/icons/p4.png" alt="">
+                                    <div class="slider-review__wrap">
+                                        <div class="slider-review__name">Esther Howard</div>
+                                        <div class="slider-review__info">Head of Marketing</div>
+                                    </div>
+                                    <div class="slider-review__rait"><svg width="13" height="12" viewBox="0 0 13 12"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.6495 5.44248C12.7952 5.33746 12.9034 5.19094 12.9587 5.02348C13.014 4.85602 13.0138 4.67601 12.958 4.50869C12.9022 4.34138 12.7937 4.19514 12.6476 4.0905C12.5016 3.98585 12.3253 3.92804 12.1436 3.92517L8.61388 3.7962C8.59653 3.79504 8.57989 3.78905 8.56598 3.77895C8.55206 3.76886 8.54146 3.75509 8.53545 3.7393L7.31575 0.55293C7.25447 0.39082 7.14316 0.250839 6.9969 0.151939C6.85064 0.0530403 6.6765 0 6.49804 0C6.31958 0 6.14543 0.0530403 5.99918 0.151939C5.85292 0.250839 5.74161 0.39082 5.68033 0.55293L4.46455 3.75068C4.45854 3.76647 4.44794 3.78024 4.43402 3.79033C4.42011 3.80043 4.40347 3.80642 4.38611 3.80758L0.856436 3.93655C0.674699 3.93942 0.498448 3.99723 0.352396 4.10188C0.206343 4.20652 0.0978141 4.35276 0.0420256 4.52007C-0.013763 4.68739 -0.0140133 4.8674 0.0413097 5.03486C0.0966328 5.20232 0.204755 5.34884 0.350516 5.45386L3.11935 7.55914C3.13321 7.56969 3.14357 7.58393 3.14914 7.60011C3.15472 7.6163 3.15527 7.6337 3.15073 7.65018L2.19771 10.9162C2.14833 11.0825 2.15311 11.2595 2.21142 11.4231C2.26972 11.5867 2.37871 11.7289 2.52356 11.8305C2.66841 11.932 2.84209 11.988 3.02097 11.9907C3.19985 11.9934 3.37525 11.9427 3.5233 11.8456L6.44902 9.94892C6.46343 9.93929 6.48053 9.93414 6.49804 9.93414C6.51555 9.93414 6.53265 9.93929 6.54706 9.94892L9.47277 11.8456C9.61882 11.946 9.79359 12 9.97281 12C10.152 12 10.3268 11.946 10.4728 11.8456C10.6177 11.745 10.7268 11.6034 10.7851 11.4404C10.8434 11.2773 10.848 11.1009 10.7984 10.9352L9.83751 7.65777C9.83242 7.64131 9.8327 7.62374 9.83831 7.60745C9.84393 7.59116 9.8546 7.57694 9.86888 7.56673L12.6495 5.44248Z"
+                                                fill="#F59E0B" />
+                                        </svg>4.0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
             </section>
 
+            <section class="artikel">
+                <div class="artikel__container">
+                    <div class="sub-title-block wow fadeInLeftBig" data-wow-duration="2s">See Our Review</div>
+                    <h2 class="artikel__title title-block wow fadeInLeftBig" data-wow-duration="1s">What Our User Say About Us</h2>
+
+                    <a href="#" class="artikel__btn">More Artikel</a>
+
+                    <div class="artikel-wrapper">
+                        <div class="artikel-wrapper__item">
+
+                            <div class="artikel-wrapper__mini-cart cart-mini">
+                                <a href="#" class="cart-mini__img"><img src="img/sell/a01.jpg" alt=""></a>
+                                <div class="cart-mini__info-block">
+                                    <div class="cart-mini__name-info">
+                                        <img src="img/icons/p1.png" alt="">
+                                        <div class="cart-mini__name">Dianne Russell</div>
+                                    </div>
+                                    <a class="cart-mini__title" href="#">The things we need to check when we want to buy a house</a>
+                                    <div class="cart-mini__time-block"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM14 14C13.9075 14.0927 13.7976 14.1663 13.6766 14.2164C13.5557 14.2666 13.426 14.2924 13.295 14.2924C13.164 14.2924 13.0343 14.2666 12.9134 14.2164C12.7924 14.1663 12.6825 14.0927 12.59 14L9.3 10.71C9.20551 10.6174 9.13034 10.5069 9.07885 10.3851C9.02735 10.2632 9.00055 10.1323 9 10V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V9.59L14 12.59C14.39 12.98 14.39 13.61 14 14Z" fill="#888B97"/>
+                                        </svg>
+                                        4 min read | 25 Apr 2021</div>
+                                </div>
+                            </div>
+                            <div class="artikel-wrapper__mini-cart cart-mini">
+                                <a href="#" class="cart-mini__img"><img src="img/sell/a02.jpg" alt=""></a>
+                                <div class="cart-mini__info-block">
+                                    <div class="cart-mini__name-info">
+                                        <img src="img/icons/p2.png" alt="">
+                                        <div class="cart-mini__name">Courtney Henry</div>
+                                    </div>
+                                    <a class="cart-mini__title" href="#">7 Ways to distinguish the quality of the house we want to buy</a>
+                                    <div class="cart-mini__time-block"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM14 14C13.9075 14.0927 13.7976 14.1663 13.6766 14.2164C13.5557 14.2666 13.426 14.2924 13.295 14.2924C13.164 14.2924 13.0343 14.2666 12.9134 14.2164C12.7924 14.1663 12.6825 14.0927 12.59 14L9.3 10.71C9.20551 10.6174 9.13034 10.5069 9.07885 10.3851C9.02735 10.2632 9.00055 10.1323 9 10V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V9.59L14 12.59C14.39 12.98 14.39 13.61 14 14Z" fill="#888B97"/>
+                                        </svg>
+                                        6 min read | 24 Apr 2021</div>
+                                </div>
+                            </div>
+                            <div class="artikel-wrapper__mini-cart cart-mini">
+                                <a href="#" class="cart-mini__img"><img src="img/sell/a03.jpg" alt=""></a>
+                                <div class="cart-mini__info-block">
+                                    <div class="cart-mini__name-info">
+                                        <img src="img/icons/p3.png" alt="">
+                                        <div class="cart-mini__name">Darlene Robertson</div>
+                                    </div>
+                                    <a class="cart-mini__title" href="#">The best way to know the quality of the house we want to buy</a>
+                                    <div class="cart-mini__time-block"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM14 14C13.9075 14.0927 13.7976 14.1663 13.6766 14.2164C13.5557 14.2666 13.426 14.2924 13.295 14.2924C13.164 14.2924 13.0343 14.2666 12.9134 14.2164C12.7924 14.1663 12.6825 14.0927 12.59 14L9.3 10.71C9.20551 10.6174 9.13034 10.5069 9.07885 10.3851C9.02735 10.2632 9.00055 10.1323 9 10V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V9.59L14 12.59C14.39 12.98 14.39 13.61 14 14Z" fill="#888B97"/>
+                                        </svg>
+                                        2 min read | 24 Apr 2021</div>
+                                </div>
+                            </div>
+                            
 
 
 
+                        </div>
+                        <div class="artikel-wrapper__item">
+                            <div class="artikel-wrapper__mini-cart cart-mini cart-mini_big-type">
+                                <a href="#" class="cart-mini__img"><img src="img/sell/a04.jpg" alt=""></a>
+                                <div class="cart-mini__info-block">
+                                    <div class="cart-mini__name-info">
+                                        <img src="img/icons/p4.png" alt="">
+                                        <div class="cart-mini__name">Cameron Williamson</div>
+                                    </div>
+                                    <a class="cart-mini__title" href="#">12 Things to know before buying a house</a>
+                                    <div class="cart-mini__descr">Want to buy a house but are unsure about what we should know, here I will try to explain what we should know and check when we want to buy a house</div>
+                                    <div class="cart-mini__time-block"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM14 14C13.9075 14.0927 13.7976 14.1663 13.6766 14.2164C13.5557 14.2666 13.426 14.2924 13.295 14.2924C13.164 14.2924 13.0343 14.2666 12.9134 14.2164C12.7924 14.1663 12.6825 14.0927 12.59 14L9.3 10.71C9.20551 10.6174 9.13034 10.5069 9.07885 10.3851C9.02735 10.2632 9.00055 10.1323 9 10V6C9 5.45 9.45 5 10 5C10.55 5 11 5.45 11 6V9.59L14 12.59C14.39 12.98 14.39 13.61 14 14Z" fill="#888B97"/>
+                                        </svg>
+                                        2 min read | 24 Apr 2021</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
 
 
 
-            <section>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem velit laborum soluta, eius similique, ratione, perspiciatis reiciendis et commodi ipsa! Doloremque delectus maiores debitis amet quos, laudanLorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem velit laborum soluta, eius similique, ratione, perspiciatis reiciendis et commodi ipsa! Doloremque delectus maiores debitis amet quos, laudantium assumenda dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem velit laborum soluta, eius similique, ratione, perspiciatis reiciendis et commodi ipsa! Doloremque delectus maiores debitis amet quos, laudantium assumenda dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem velit laborum soluta, eius similique, ratione, perspiciatis reiciendis et commodi ipsa! Doloremque delectus maiores debitis amet quos, laudantium assumenda dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem velit laborum soluta, eius similique, ratione, perspiciatis reiciendis et commodi ipsa! Doloremque delectus maiores debitis amet quos, laudantium assumenda dignissimos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum rem velit laborum soluta, eius similique, ratione, perspiciatis reiciendis et commodi ipsa! Doloremque delectus maiores debitis amet quos, laudantium assumenda dignissimos?tium assumenda dignissimos?
+                </div>
             </section>
-            
+
+            <section class="subscribe">
+                <div class="subscribe__container">
+                    <div class="subscribe__wrapper">
+                        <h2 class="subscribe__title">Subscribe For More Info <br>and update from Hounter</h2>
+                        <form action="#" class="subscribe__search search-block">
+                            <input type="text" placeholder="Your email here">
+                            <button class="search-block__btn">Subsribe Now</button>
+                        </form>
+
+                        <img class="subscribe__img1 wow fadeInLeft" data-wow-duration="1s" src="img/sub/01.png" alt="">
+                        <img class="subscribe__img2 wow fadeInDown" data-wow-duration="1.3s" src="img/sub/02.png" alt="">
+                        <img class="subscribe__img3 wow fadeInUp" data-wow-duration="1.9s" src="img/sub/03.png" alt="">
+                        <img class="subscribe__img4 wow fadeInUp" data-wow-duration="2.1s" src="img/sub/04.png" alt="">
+                        <img class="subscribe__img5 wow fadeInLeft" data-wow-duration="2.4s" src="img/sub/05.png" alt="">
+                        <img class="subscribe__img6 wow fadeInRight" data-wow-duration="2.8s" src="img/sub/06.png" alt="">
+                        <img class="subscribe__img7 wow fadeInDown" data-wow-duration="3s" src="img/sub/07.png" alt="">
+                        <img class="subscribe__img8 wow fadeInRight" data-wow-duration="3.3s" src="img/sub/08.png" alt="">
+                    </div>
+                
+                </div>
+            </section>
+
         </main>
 
 
 
 
         <footer class="footer">
+            <div class="footer__container">
 
+                <div class="footer__item">
+                    <img src="img/logo.svg" class="footer__logo" alt="">
+                    <div class="footer__descr">We provide information about properties such as houses, villas and apartments to help people find their dream home</div>
+                    <div class="footer__soc">
+                        <a href="#"><img src="img/icons/in.svg" alt=""></a>
+                        <a href="#"><img src="img/icons/fb.svg" alt=""></a>
+                        <a href="#"><img src="img/icons/tw.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="footer__item">
+                    <div class="footer__title">Property</div>
+                    <ul>
+                        <li><a href="#">House</a></li>
+                        <li><a href="#">Apartment</a></li>
+                        <li><a href="#">Villa</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__title">Article</div>
+                    <ul>
+                        <li><a href="#">New Article</a></li>
+                        <li><a href="#">Popular Article</a></li>
+                        <li><a href="#">Most Read</a></li>
+                        <li><a href="#">Tips & Tricks</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__title">Contact</div>
+                    <ul>
+                        <li><a href="#">2464 Royal Ln. Mesa, New Jersey 45463</a></li>
+                        <li><a href="tel:6715550110">(671) 555-0110</a></li>
+                        <li><a href="mailto:info@hounter.com">info@hounter.com</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
         </footer>
     </div>
 
     <script type="text/javascript" src="js/jq/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/jq/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

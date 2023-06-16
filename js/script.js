@@ -1,5 +1,5 @@
 'use strict'
-
+new WOW().init();
 
  $(document).ready(function(){
 		$('.main-slider').slick({
@@ -24,6 +24,29 @@
 	});
 
 
+ $(document).ready(function(){
+		$('.slider-review').slick({
+			infinite: true,
+  			slidesToShow: 1,
+			dots: true,
+			centerMode: true,
+  			variableWidth: true,
+			responsive: [
+				{
+					breakpoint: 1036,
+      				settings: {
+						centerMode: false,
+						variableWidth: false,
+					}
+
+				}
+
+			]
+			
+		});
+	});
+
+
 const tabTitle = document.querySelectorAll('.tabs-title'),
 	tabSection = document.querySelectorAll('.houses-slider'),
 	tabParent = document.querySelector('.recommend__container');
@@ -43,6 +66,7 @@ hideActive()
 function showeActive(i = 0) {
 	tabTitle[i].classList.add('tabs-title_active');
 	tabSection[i].style.display = 'block'
+	
 }
 showeActive()
 
