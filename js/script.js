@@ -85,40 +85,30 @@ tabParent.addEventListener('click', function(event) {
 
 
 
-	/* tabTitle.forEach(function(item, i) {
-		if (event.target === event.target.classList.contains('tabs-title')) {
-			hideActive()
-			showeActive(i)
-		}
-	}) */
-
-
-
-
-
-
 
 /* =========================================================== БУРГЕР МЕНЮ */
 
 
-const burger = document.querySelector('.hamburger'),
-	hideMenu = document.querySelector('.main-menu'), //Блок который скрывается
-	menuLink = document.querySelectorAll('.main-menu__item'), //Класс элементов меню, по которым кликаем
+const burger = document.querySelector('.humburger'),
+	hideMenu = document.querySelector('.menu'), //Блок который скрывается
+	menuLink = document.querySelectorAll('.menu__item'), //Класс элементов меню, по которым кликаем
 	body = document.querySelector('body'); 
 
 		burger.addEventListener('click', function() {
-			hideMenu.classList.toggle('main-menu__link_active'); //Класс активности
-			burger.classList.toggle('hamburger_close');
-			//body.classList.toggle('body-hidden');
+			hideMenu.classList.toggle('menu_active'); //Класс активности
+			burger.classList.toggle('humburger_active');
+			body.classList.toggle('body-hidden');
+			
 
 		});
 
 
 		menuLink.forEach(function(item) {
-			item.addEventListener('click', function() {
-				hideMenu.classList.toggle('main-menu__link_active'); //Класс активности
-				burger.classList.toggle('hamburger_close');
-				//body.classList.toggle('body-hidden');
+			item.addEventListener('click', function(e) {
+				hideMenu.classList.toggle('menu_active'); //Класс активности
+				burger.classList.toggle('humburger_active');
+				
+
 			});
 		});
 
@@ -126,67 +116,3 @@ const burger = document.querySelector('.hamburger'),
 
 
 
-
-// =================================================Модуль анімація цифрового лічильника
-//Цифри котрі мають анимуватись обгортаємо тегом з атрибутом data-digits-counter
-window.addEventListener('load', windowLoad);
-
-function windowLoad() { 
-
-	// Функція ініціалізації
-	function digitsCountersInit(digitsCountersItems) {
-		let digitsCounters = digitsCountersItems ? digitsCountersItems : document.querySelectorAll("[data-digits-counter]");
-		if (digitsCounters.length) {
-			digitsCounters.forEach(digitsCounter => {
-				digitsCountersAnimate(digitsCounter);
-			});
-		}
-	}
-
-	// Функція анімації
-	function digitsCountersAnimate(digitsCounter) {
-		let startTimestamp = null;
-		const duration = parseInt(digitsCounter.dataset.digitsCounterSpeed) ? parseInt(digitsCounter.dataset.digitsCounterSpeed) : 1000; //Час анімації
-		const startValue = parseInt(digitsCounter.innerHTML);
-		const startPosition = 0;
-		const step = (timestamp) => {
-			if (!startTimestamp) startTimestamp = timestamp;
-			const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-			digitsCounter.innerHTML = Math.floor(progress * (startPosition + startValue));
-			if (progress < 1) {
-				window.requestAnimationFrame(step);
-			}
-		};
-		window.requestAnimationFrame(step);
-	}
-
-	/* Пуск при завантажені сторінки */
-	//digitsCountersInit();
-
-	//--------Пуск при скролі до блока:
-		let options = {
-			threshold: 0.5
-		};
-
-		let observer = new IntersectionObserver((entries, observer) => {
-			entries.forEach(entry => {
-				if(entry.isIntersecting) {
-					const targetElement = entry.target;
-					const digitsCountersItems = targetElement.querySelectorAll('[data-digits-counter]');
-					if (digitsCountersItems.length) {
-						digitsCountersInit(digitsCountersItems);
-					}
-					//Вимкнути після спрацювання
-					//observer.unobserve(targetElement);
-				}
-			});
-		}, options);
-
-		let sections = document.querySelectorAll('.numb__date') //Батьківський єлемент, який з'являється на екрані
-		if(sections.length) {
-			sections.forEach(section => {
-				observer.observe(section);
-			});
-		}
- } 
-// =====================================================================================

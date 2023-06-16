@@ -7,9 +7,9 @@
     width: 100%
     transform: translateX(-50%)
     padding: 5px 0
-    @media (max-width: 1078.98px)
-        background: red
+    @media (max-width: 1079.98px)
         top: 15px
+        position: fixed
 
     &__container
         display: flex
@@ -17,9 +17,14 @@
         justify-content: space-between
         gap: 65px
         position: relative
+        @media (max-width: 745.98px)
+            justify-content: flex-start
         @media (max-width: 732.98px)
-            gap: 24px
+            gap: 5px
+
     &__logo
+        position: relative
+        z-index: 6
 
         img
 
@@ -27,6 +32,8 @@
         flex: 1 1 100%
         display: flex
         justify-content: flex-end
+        @media (max-width: 745.98px)
+            flex: 0 1 20px
 
     &__btn
         width: 107px
@@ -40,6 +47,8 @@
         white-space: nowrap
         padding: 12px 24px
         transition: all 0.5s
+        position: relative
+        z-index: 6
         &:hover
             transition: all 0.5s
             background: #fff
@@ -50,7 +59,21 @@
     column-gap: 24px
     row-gap: 8px
     flex-wrap: wrap
-    @media (max-width: 732.98px)
+    transition: all 0.5s
+
+    @media (max-width: 745.98px)
+        flex-direction: column
+        position: fixed
+        top: 66px
+        left: 0
+        background: #fff
+        width: 100vw
+        height: 100vh
+        padding: 100px 60px
+        border-radius: 24px
+        border: 3px solid #10B981
+        overflow: auto
+        transform: translateX(-100%)
 
     &__item
         position: relative
@@ -81,6 +104,14 @@
             transition: all 0.5s
             background: #D1FAE5
 
+        @media (max-width: 1079.98px)
+            color: #10B981
+            background: rgba(255, 255, 255, 0.5)
+        @media (max-width: 745.98px)
+            background: #10B981
+            color: #fff
+            justify-content: space-between
+
     &__sub-menu
         background: #10B981
         padding: 30px
@@ -92,6 +123,10 @@
         visibility: hidden
         transform: translateY(100px)
         transition: all 0.5s
+        @media (max-width: 745.98px)
+            left: 0
+            width: 100%
+            top: 56px
 
         li
             margin-bottom: 15px
@@ -101,3 +136,33 @@
             a
                 width: 100%
                 display: block
+
+.menu_active
+    transform: translateX(0)
+    transition: all 0.5s
+
+.humburger
+    display: none
+    position: fixed
+    top: 20px
+    right: 8px
+    span
+        width: 40px
+        height: 3px
+        background: #10B981
+        display: block
+        margin-bottom: 5px
+        transition: all 0.4s
+
+    @media (max-width: 745.98px)
+        display: block
+
+.humburger_active
+    span
+        background: #F59E0B
+        &:nth-child(1)
+            transform: translateX(5px)
+            transition: all 0.4s
+        &:nth-child(3)
+            transform: translateX(-5px)
+            transition: all 0.9s
