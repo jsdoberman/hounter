@@ -236,6 +236,7 @@ button {
   .header {
     top: 15px;
     position: fixed;
+    background: #fff;
   }
 }
 .header__container {
