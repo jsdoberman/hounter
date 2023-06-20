@@ -344,6 +344,13 @@ button {
 .menu__item {
   position: relative;
 }
+.menu__item img {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 .menu__item:hover .menu__sub-menu {
   opacity: 1;
   visibility: visible;

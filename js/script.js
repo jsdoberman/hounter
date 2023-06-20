@@ -91,7 +91,7 @@ tabParent.addEventListener('click', function(event) {
 
 const burger = document.querySelector('.humburger'),
 	hideMenu = document.querySelector('.menu'), //Блок который скрывается
-	menuLink = document.querySelectorAll('.menu__item'), //Класс элементов меню, по которым кликаем
+	menuLink = document.querySelectorAll('.menu__link'), //Класс элементов меню, по которым кликаем
 	body = document.querySelector('body'); 
 
 		burger.addEventListener('click', function() {
@@ -103,7 +103,7 @@ const burger = document.querySelector('.humburger'),
 		});
 
 
-		menuLink.forEach(function(item) {
+menuLink.forEach(function(item) {
 			item.addEventListener('click', function(e) {
 				hideMenu.classList.toggle('menu_active'); //Класс активности
 				burger.classList.toggle('humburger_active');
